@@ -15,6 +15,10 @@ function CreateArea(props) {
   };
   const clickHandle = (e) => {
     props.onAdd(updateNote);
+    setUpdateNote({
+      title: "",
+      content: ""
+    })
     e.preventDefault();
   };
   return (
